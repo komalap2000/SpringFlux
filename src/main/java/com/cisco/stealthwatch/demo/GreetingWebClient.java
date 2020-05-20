@@ -9,7 +9,7 @@ public class GreetingWebClient {
     private WebClient client = WebClient.create("http://localhost:8080");
 
     private Mono<ClientResponse> result = client.get()
-            .uri("/hello")
+            .uri("/com.cisco.stealthwatch.demo")
             .accept(MediaType.TEXT_PLAIN)
             .exchange();
 

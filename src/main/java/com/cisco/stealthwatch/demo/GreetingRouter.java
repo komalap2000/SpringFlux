@@ -14,6 +14,6 @@ public class GreetingRouter {
     public RouterFunction<ServerResponse> route(GreetingHandler greetingHandler) {
 
         return RouterFunctions
-                .route(RequestPredicates.GET("/hello").and(RequestPredicates.accept(MediaType.TEXT_PLAIN)), greetingHandler::hello);
+                .route(RequestPredicates.GET("/com.cisco.stealthwatch.demo").and(RequestPredicates.accept(MediaType.TEXT_PLAIN)), greetingHandler::hello);
     }
 }
